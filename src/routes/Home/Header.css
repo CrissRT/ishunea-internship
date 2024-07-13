@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 80px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+header ul {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items:center;
+    gap:24px;
+    padding: 0;
+}
+
+
+header .btn-secondary:hover,
+header .btn-secondary:focus,
+header .btn-secondary:active,
+header .btn-secondary {
+    --bs-btn-active-bg : transparent;
+    border:none;
+    background-color: transparent;
+}
+
+header * {
+    font-size: 16px;
+    color: white;
+}
+
+header .dropdown:last-of-type button.btn-secondary {
+    padding-left: 6px;
+}
+
+
+#header-menu {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+hr {
+    color:white;
+    width: calc(100% - 160px);
+    margin: auto;
+    opacity: 15%;
+}

@@ -1,0 +1,19 @@
+.projects {
+    padding: 100px 80px 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: black;
+    width: 100%;
+}
+
+.projects * {
+    color: white;
+}
+
+.projects h2 {
+    margin: auto;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 67.2px;  
+}
