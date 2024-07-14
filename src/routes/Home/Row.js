@@ -5,6 +5,7 @@ function Row({items, height = "default"}) {
     // height = default - 320px
     // height = !DEFAULT = 240px container
   return (
+    <div className='row-wrapper'>
     <div className={`row ${height !== "default"? "height-240px-container" : "" }`}>
         {items.map((item) => 
         <div key={item.text} className={`column ${height !== "default"? "height-240px-container" : "" }`}>
@@ -24,6 +25,7 @@ function Row({items, height = "default"}) {
             </div>
         </div>
         )}
+    </div>
     </div>
   )
 }
