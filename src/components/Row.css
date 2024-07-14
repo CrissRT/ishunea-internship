@@ -1,0 +1,46 @@
+:root {
+    --height-row-wrapper-default-service-item: 384px;
+    --height-row-wrapper-minimized-service-item: 264px;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    width:auto;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    gap: 24px;
+    overflow-x:auto;
+    overflow-y: hidden;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+
+.row-wrapper-default-service-item {
+    display: flex;
+    width:100%;
+    height: var(--height-row-wrapper-default-service-item);
+    align-items:center;
+    justify-content: center;
+    margin: 0;
+}
+
+.row-wrapper-minimized-service-item {
+    display: flex;
+    width:100%;
+    height: var(--height-row-wrapper-minimized-service-item);
+    align-items:center;
+    justify-content: center;
+    margin: 0;
+}
+
+.row > :not(:first-child):not(:last-child) {
+    margin-top:auto;
+}

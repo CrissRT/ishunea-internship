@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Projects.css"
-import Row from "./Row.js"
+import Row from "../../components/Row.js"
 import Clients from './Clients'
 
 
@@ -83,9 +83,9 @@ function Projects() {
   const rows = [];
   for (let i = 0; i < row_items.length; i += 4) {
     if(rows.length % 2 === 0)
-      rows.push(<Row key={i} items={row_items.slice(i, i + 4)} />);
+      rows.push(<Row key={i} items={row_items.slice(i, i + 4)} nameOfItem={"service"} />);
     else
-      rows.push(<Row key={i} items={row_items.slice(i, i + 4)} height={"non-default"} />);
+      rows.push(<Row key={i} items={row_items.slice(i, i + 4)} height={"non-default"} nameOfItem={"service"} />);
   }
 
   return (

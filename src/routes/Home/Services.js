@@ -4,7 +4,7 @@ import Mobile_Apps_Image from "./images/mobile-apps.png"
 import UX_UI_Design_Image from "./images/ux-ui-design.png"
 import Maintenance_Image from "./images/maintenance.png"
 import Graphic_Design_Image from "./images/graphic-design.png"
-import Row from './Row'
+import Row from '../../components/Row'
 
 function Services() {
   const row_items = [
@@ -33,7 +33,7 @@ function Services() {
   return (
     <section className='services'>
       <h2 id='service-title'>We help companies to grow digital</h2>
-      <Row items={row_items}/>
+      <Row items={row_items} nameOfItem={"service"}/>
     </section>
   )
 }
