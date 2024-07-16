@@ -5,6 +5,8 @@ import Services from './Services'
 import Advantage from './Advantage'
 import Projects from './Projects'
 import Progress from './Progress'
+import CallToAction from './CallToAction'
+import Blog from './Blog'
 
 function Page() {
   return (
@@ -14,6 +16,8 @@ function Page() {
     <Advantage/>
     <Projects/>
     <Progress/>
+    <CallToAction/>
+    <Blog/>
   </main>
 )
 }

@@ -8,17 +8,18 @@ import russian from "../images/russian.svg";
 import israilean from "../images/israilean.svg";
 import english from "../images/english.svg";
 
-function MenuNav({ textColor = "white", title = "Placeholder", itemsDroplist = [] }) {
+const MenuNav = ({ textColor = "white", title = "Placeholder", itemsDroplist = [] }) => {
   const [arrowSide, setArrowSide] = useState("down");
   const [language, setLanguage] = useState(title);
-  const [items, setItemsDropList] = useState(itemsDroplist)
+  const [items, setItemsDropList] = useState(itemsDroplist);
 
   const handleClick = (e) => {
     const selectedLanguage = e.target.textContent;
-    if (getFlagAndNameOfLanguage(selectedLanguage)) {
+    const flagAndName = getFlagAndNameOfLanguage(selectedLanguage);
+    if (flagAndName) {
       setLanguage(selectedLanguage);
-      const updatedList = [language, ...items].filter((item) => item !== selectedLanguage)
-      setItemsDropList(updatedList)
+      const updatedList = [language, ...items].filter(item => item !== selectedLanguage);
+      setItemsDropList(updatedList);
     }
   };
 
@@ -27,7 +28,7 @@ function MenuNav({ textColor = "white", title = "Placeholder", itemsDroplist = [
   }, []);
 
   const getFlagAndNameOfLanguage = (name) => {
-    switch (name) {
+    switch (name.toLowerCase()) {
       case "english":
         return [english, "english"];
       case "romanian":
@@ -42,9 +43,14 @@ function MenuNav({ textColor = "white", title = "Placeholder", itemsDroplist = [
   };
 
   const getColorClass = () => {
-    if (textColor === "white") return "white-color-svg";
-    if (textColor === "sunny") return "sunny";
-    return "black";
+    switch (textColor) {
+      case "white":
+        return "white-color-svg";
+      case "sunny":
+        return "sunny";
+      default:
+        return "black";
+    }
   };
 
   const getArrowClassNames = () => {
@@ -70,14 +76,14 @@ function MenuNav({ textColor = "white", title = "Placeholder", itemsDroplist = [
       </button>
       <ul className="dropdown-menu" style={{color: "black"}}>
         {items.map((item, index) => (
-          <li key={index} onClick={(e) => handleClick(e)}>
+          <li key={index} onClick={handleClick}>
             <a className="dropdown-item" href="#">{item}</a>
           </li>
         ))}
       </ul>
     </div>
   );
-}
+};
 
 MenuNav.propTypes = {
   textColor: PropTypes.string,

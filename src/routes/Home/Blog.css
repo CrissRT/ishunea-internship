@@ -1,0 +1,15 @@
+.blog {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 80px 100px 80px;
+    background-color: white;
+}
+
+.blog h3 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 67.2px;
+}

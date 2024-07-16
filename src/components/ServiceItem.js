@@ -32,9 +32,9 @@ function ServiceItem({height = "default", item}) {
     }
     
   return (
-        <div className="service-item-default">
-            <img className='image-service-item' src={item.image_src}/>
+        <div className="service-item-default" >
             <ItemFooter/>
+            <img className='image-service-item' src={item.image_src}/>
         </div>
   )
 }

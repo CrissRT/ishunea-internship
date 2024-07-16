@@ -42,33 +42,6 @@
     align-items: center;
 }
 
-.contact-us-header-button {
-    box-shadow: 0px 0px 40px 0px #FBDF091A;
-    background: linear-gradient(90deg, #FBDF06, #FEB700); /* Button background color */
-    border: 2px solid rgba(0, 0, 0, 0.05); /* Border color and opacity */
-    border-radius: 100px; /* Rounded corners */
-    color: black; /* Text color */
-    font-size: 16px; /* Text size */
-    padding: 20px 32px; /* Padding */
-    text-align: center; /* Center text */
-    display: inline-flex; /* For centering the icon and text */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    text-decoration: none; /* Remove underline */
-    
-    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
-    font-weight: bold;
-    line-height: 24px;
-}
-
-.contact-us-header-button:hover {
-    box-shadow: 0 0 25px 0 rgba(251, 223, 6, 0.2), 0 0 50px 0 rgba(251, 223, 6, 0.2); /* Slightly stronger shadows on hover */
-}
-
-.contact-us-header-button .icon {
-    margin-left: 10px; /* Space between text and icon */
-}
-
 .hero img {
     width: 100%;
 }

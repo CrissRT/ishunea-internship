@@ -1,3 +1,17 @@
+.service-item-minimized:hover .image-service-item,
+.service-item-default:hover .image-service-item {
+    opacity:50%;
+    transition: opacity .3s ease-out,
+    transform .3s ease-out;
+    transform: scale(1.21);
+}
+
+.service-item-minimized:hover .button-service-item,
+.service-item-default:hover .button-service-item {
+    transform: rotate(45deg);
+    transition: transform .3s ease-out;
+}
+
 .service-item-p {
     height: 100%;
     font-weight: 500;
@@ -13,6 +27,7 @@
     padding: auto;
     width: 32px;
     height: 32px;
+    transition: transform .3s ease-out;  
 }
 
 .image-service-item {
@@ -21,7 +36,10 @@
     width: 100%;
     height: 100%;
     top: 0;
-    
+    opacity: 75%;
+    /* background:none; */
+    transition: opacity .3s ease-out,
+    transform .3s ease-out;
 }
 
 .service-item-minimized {
