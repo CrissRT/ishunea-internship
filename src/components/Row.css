@@ -25,23 +25,22 @@
 
 
 .row-wrapper-default-service-item {
+    height: var(--height-row-wrapper-default-service-item);
+
+}
+
+.row-wrapper {
     display: flex;
     width:100%;
-    height: var(--height-row-wrapper-default-service-item);
     align-items:center;
     justify-content: center;
     margin: 0;
 }
 
 .row-wrapper-minimized-service-item {
-    display: flex;
-    width:100%;
     height: var(--height-row-wrapper-minimized-service-item);
-    align-items:center;
-    justify-content: center;
-    margin: 0;
 }
 
-.row > :first-child,  .row > :last-child{
+.row-service-item > :first-child,  .row-service-item > :last-child{
     margin-bottom:auto;
 }
