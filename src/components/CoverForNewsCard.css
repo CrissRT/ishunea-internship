@@ -7,6 +7,7 @@
     /* Fixed sizes */
     width: 302px;
     z-index: 0;
+    overflow: hidden;
 }
 
 .card-cover:hover .card-cover-image {
@@ -19,9 +20,7 @@
     padding: 0px 12px 0px 12px;
     display: flex;
     gap:4px;
-    /* width: max-content; */
     border-radius:20px;
-    border: 1px solid rgba(255, 255, 255, 1);
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     radial-gradient(49.75% 100% at 50% 100%, rgba(251, 223, 6, 0.1) 0%, rgba(251, 223, 6, 0) 100%);
     /* Fixed properties */
@@ -29,6 +28,8 @@
     position: absolute;
     top: 16px;
     left: 16px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
 }
 
 .card-cover-tag > p {

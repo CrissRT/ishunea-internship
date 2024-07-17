@@ -1,6 +1,6 @@
 .blog {
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -12,4 +12,13 @@
     font-weight: 500;
     font-size: 56px;
     line-height: 67.2px;
+}
+
+.wrapper-blog {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    align-items:center;
+    height: auto;
 }

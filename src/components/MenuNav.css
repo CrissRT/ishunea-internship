@@ -51,6 +51,8 @@
     color: white;
 }
 
-.black {
-    color: black;
+
+.black, .black:hover {
+    color: black !important;
 }
+

@@ -1,9 +1,9 @@
 import React from 'react'
-import "./CoverForNewsCard"
+import "./CoverForNewsCard.css"
 
-function CoverForNewsCard(item, size = "xl") {
+function CoverForNewsCard({item}, size = "xl") {
   const classnameForSize = () => {
-    switch (size.toLowerCase()) {        
+    switch (size.toLowerCase) {        
       case "l":
         return "card-cover-l-size";
       case "m":
@@ -19,7 +19,7 @@ function CoverForNewsCard(item, size = "xl") {
     <div className={`card-cover ${classnameForSize()}`}>
       <div className='card-cover-tag'>
         <p>
-          insight
+          {item.label}
         </p>
       </div>
       <img className='card-cover-image' src={item.image_src}/>

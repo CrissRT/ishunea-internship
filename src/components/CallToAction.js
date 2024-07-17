@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CallToAction.css"
-import RequestButton from '../../components/RequestButton'
+import RequestButton from './RequestButton'
 
 function CallToAction() {
   return (

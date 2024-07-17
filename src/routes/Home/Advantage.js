@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Advantage.css"
-import Agro_Image from "./images/advantage-image-agro.png"
+
+import backgroundImage from "../../images/background-image-blue-clouds.jpg"
+import agroImage from "./images/advantage-image-agro.png"
 
 function Advantage() {
     // Reusable Icon component
@@ -98,6 +100,7 @@ function Advantage() {
     return (
         <section className='advantage'>
             <div className='box'>
+                <img className='background-image' src={backgroundImage}></img>
                 <h2 id="advantages-title">Simple at every stage</h2>
                 <div id='advantages-list'>
                     {chunkedItems.map((row, rowIndex) => (
@@ -113,7 +116,7 @@ function Advantage() {
                 </div>
                 <div className='advantage-image'>
                     <div className='device'>
-                        <img src={Agro_Image}/>
+                        <img src={agroImage}/>
                     </div>
                 </div>
                 

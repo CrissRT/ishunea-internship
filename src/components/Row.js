@@ -6,13 +6,25 @@ import CoverForNewsCard from './CoverForNewsCard'
 function Row({items, nameOfItem, height = "default"}) {
 
     const newsCardsPattern = (height) => {
-        <div className={`row-wrapper`}>
-            <div className={`row`}>
-                {items.map((item) => 
-                    <CoverForNewsCard item={item} height={height}/>
-                )}
+        return(
+            <div className={`row-wrapper`}>
+                <div className={`row`}>
+                    {items.map((item) => 
+                        <div className='news-cards-wrapper'>
+                            <CoverForNewsCard item={item} height={height}/>
+                            <div className='content-news-cards'>
+                                <p className='title-content-news-cards'>
+                                    {item.title}
+                                </p>
+                                <p className='date-news-cards'>
+                                    {item.date}
+                                </p>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
-        </div>
+        )
     }
     
     const heightInLowerCase = height.toLowerCase();
@@ -43,9 +55,9 @@ function Row({items, nameOfItem, height = "default"}) {
 
         case "news-cards":
             if (heightInLowerCase === "l") return newsCardsPattern(heightInLowerCase)
-            else if (heightInLowerCase === "m") newsCardsPattern(heightInLowerCase)
-            else if (heightInLowerCase === "s") newsCardsPattern(heightInLowerCase)
-            else newsCardsPattern(heightInLowerCase)
+            else if (heightInLowerCase === "m") return newsCardsPattern(heightInLowerCase)
+            else if (heightInLowerCase === "s") return newsCardsPattern(heightInLowerCase)
+            else return newsCardsPattern("xl")
 
         // case "project":
         //     return (

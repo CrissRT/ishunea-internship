@@ -1,23 +1,23 @@
 import React from 'react'
 import "./Projects.css"
-import Row from "../../components/Row.js"
-import Clients from './Clients'
+import Row from "./Row.js"
 
 
-import carter_project_image from "./images/Carter-project-image.png"
-import lusiton_tl_image from "./images/lusiton-tl.png"
-import alo_md_image from "./images/alo-md.png"
-import tesla_image from "./images/tesla.png"
-import xiaomi_store_image from "./images/xiaomi-store.png"
-import smart_hydro_image from "./images/smart-hydroisolation.png"
-import apple_image from "./images/apple.png"
-import usmf_image from "./images/usmf.png"
-import darwin_image from "./images/darwin.png"
-import samsung_image from "./images/samsung.png"
-import agro_conex_image from "./images/agro_conex.png"
-import enter_image from "./images/enter.png"
+import carter_project_image from "../images/Carter-project-image.png"
+import lusiton_tl_image from "../images/lusiton-tl.png"
+import alo_md_image from "../images/alo-md.png"
+import tesla_image from "../images/tesla.png"
+import xiaomi_store_image from "../images/xiaomi-store.png"
+import smart_hydro_image from "../images/smart-hydroisolation.png"
+import apple_image from "../images/apple.png"
+import usmf_image from "../images/usmf.png"
+import darwin_image from "../images/darwin.png"
+import samsung_image from "../images/samsung.png"
+import agro_conex_image from "../images/agro_conex.png"
+import enter_image from "../images/enter.png"
+import Clients from '../routes/Home/Clients.js'
 
-function Projects() {
+function Projects({thereAreTitleAndClients = false, backgroundColor = "black", paddingTopBottom = "100px"}) {
   const row_items = [
     {
       text: "Carter",
@@ -89,10 +89,10 @@ function Projects() {
   }
 
   return (
-    <section className='projects'>
-        <h2>Projects highlights</h2>
+    <section className='projects' style={{backgroundColor: backgroundColor, paddingTop: paddingTopBottom, paddingBottom: paddingTopBottom}}>
+        {thereAreTitleAndClients === true &&  <h2>Projects highlights</h2>}
         {rows}
-        <Clients/>
+        {thereAreTitleAndClients === true && <Clients/>}
     </section>
   );
 }

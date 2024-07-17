@@ -20,6 +20,15 @@ header ul {
 }
 
 
+.nav-link-active {
+    color:rgba(254, 183, 0, 1);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
 header .btn-secondary:hover,
 header .btn-secondary:focus,
 header .btn-secondary:active,
@@ -40,9 +49,11 @@ header > * {
     align-items:center;
 }
 
-hr {
-    color:white;
+header hr {
+    position: absolute;
+    margin-left: 80px;
+    bottom: 0;
+    left: 0;
+    opacity: 10%;
     width: calc(100% - 160px);
-    margin: auto;
-    opacity: 15%;
 }

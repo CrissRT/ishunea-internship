@@ -2,15 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-import Home from './routes/Home/Home.js';
+import HomePage from './routes/Home/HomePage.js';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import WorksPage from './routes/Works/WorksPage.js';
+import ServicesPage from './routes/Services/ServicesPage.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <HomePage />,
+  },
+  {
+    path: "/works",
+    element: <WorksPage/>
+  },
+  {
+    path: "/services",
+    element: <ServicesPage/>
   },
 ]);
 

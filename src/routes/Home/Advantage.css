@@ -11,6 +11,7 @@
 }
 
 .box {
+    background-color: black;
     width: 100%;
     height: 646px;
     border-radius: 16px;
@@ -20,13 +21,8 @@
     align-items:center;
     gap: 64px;
     flex-wrap: wrap;
-    /* background-color:green; */
-    background-color: rgba(0, 0, 0, 85%);
-    background-image:  url("./images/background-image-advantage.jpg");
-    background-blend-mode:overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
+    position: relative;
 }
 
 #advantages-title {
