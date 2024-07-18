@@ -65,16 +65,18 @@ const MenuNav = ({ textColor = "white", title = "Placeholder", itemsDroplist = [
     <div className="dropdown">
       {flagAndName && <img src={flagAndName[0]} className="flag" alt="flag" />}
       <button 
-        className={`btn btn-secondary dropdown-toggle ${getColorClass() !== "white-color-svg" ? getColorClass() : "white-color-text"}`} 
+        className={`btn btn-secondary dropdown-hover ${getColorClass() !== "white-color-svg" ? getColorClass() : "white-color-text"}`} 
         type="button" 
-        data-bs-toggle="dropdown" 
+        data-bs-hover="dropdown" 
         aria-expanded="false" 
         onClick={handleToggle}
       >
         {flagAndName ? flagAndName[1] : title}
         <img src={textColor === "sunny" ? sunnyArrowImage : arrowImage} className={getArrowClassNames()} alt="arrow" />
       </button>
-      <ul className="dropdown-menu" style={{color: "black"}}>
+      <ul 
+        className="dropdown-menu" style={{color: "black"}}
+      >
         {items.map((item, index) => (
           <li key={index} onClick={handleClick}>
             <a className="dropdown-item" href="#">{item}</a>
