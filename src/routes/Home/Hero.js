@@ -2,6 +2,8 @@ import React from 'react'
 import "./Hero.css"
 import Carter from "./images/Carter.svg" 
 import RequestButton from '../../components/RequestButton'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Hero() {
   return (
@@ -14,7 +16,7 @@ function Hero() {
             </div>
             <RequestButton text="contact us"/>
         </div>
-        <img src={Carter} alt="" /> 
+        <LazyLoadImage effect="blur" src={Carter}/>
     </section>
   </>
     )

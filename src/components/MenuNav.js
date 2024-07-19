@@ -65,9 +65,9 @@ const MenuNav = ({ textColor = "white", title = "Placeholder", itemsDroplist = [
     <div className="dropdown">
       {flagAndName && <img src={flagAndName[0]} className="flag" alt="flag" />}
       <button 
-        className={`btn btn-secondary dropdown-hover ${getColorClass() !== "white-color-svg" ? getColorClass() : "white-color-text"}`} 
+        className={`btn btn-secondary dropdown-toggle ${getColorClass() !== "white-color-svg" ? getColorClass() : "white-color-text"}`} 
         type="button" 
-        data-bs-hover="dropdown" 
+        data-bs-toggle="dropdown" 
         aria-expanded="false" 
         onClick={handleToggle}
       >

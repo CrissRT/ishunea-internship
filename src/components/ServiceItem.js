@@ -1,5 +1,7 @@
 import React from 'react'
 import "./ServiceItem.css"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function ServiceItem({height = "default", item}) {
 
@@ -25,7 +27,7 @@ function ServiceItem({height = "default", item}) {
     if (height !== "default") {
         return (
             <div className="service-item-minimized" >
-                <img className='image-service-item' src={item.image_src}/>
+                <LazyLoadImage effect="blur" wrapperClassName='image-service-item' src={item.image_src}/>
                 <ItemFooter/>
             </div>
         )
@@ -34,7 +36,7 @@ function ServiceItem({height = "default", item}) {
   return (
         <div className="service-item-default" >
             <ItemFooter/>
-            <img className='image-service-item' src={item.image_src}/>
+            <LazyLoadImage effect="blur" wrapperClassName='image-service-item' src={item.image_src}/>
         </div>
   )
 }

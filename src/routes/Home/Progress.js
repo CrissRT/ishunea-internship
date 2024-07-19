@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Progress.css"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import analysisIcon  from"./images/icon-analysis.svg"
 import productLaunchIcon  from"./images/icon-product-launch.svg"
@@ -56,7 +58,7 @@ function Progress() {
                     {card_info.map((item, index) => {
                         return (
                             <div className='card' key={item.title} id={"card" + (index + 1) }>
-                                <img src={item.icon_src} className='icon-card'></img>
+                                <LazyLoadImage effect="blur" wrapperClassName='icon-card' src={item.icon_src}/>
                                 <div className='card-content'>
                                     <h4>
                                         {item.title}

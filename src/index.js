@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import WorksPage from './routes/Works/WorksPage.js';
 import ServicesPage from './routes/Services/ServicesPage.js';
+import TermsAndConditions from './routes/Terms/TermsAndConditions.js';
+import PageNotFound from './components/PageNotFound.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <ServicesPage/>
+  },
+  {
+    path: "/terms_conditions",
+    element: <TermsAndConditions/>,
+  },
+  {
+    path: "/*",
+    element: <PageNotFound/>,
   },
 ]);
 

@@ -99,6 +99,7 @@ footer #footer-heading, footer p {
     line-height: 18px;
     width: max-content;
     color: rgba(138, 162, 169, 1);
+    text-decoration: none;
 }
 
 #legal {

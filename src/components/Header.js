@@ -16,21 +16,21 @@ function Header({textColor = "white"}) {
           <ul className='navigation-list'>
             <li >
               <NavLink to="/services"
-                className={({ isActive }) =>isActive ? "nav-link-active" : textColor !== "white" && "black"}
+                className={({ isActive }) =>isActive ? "nav-link-active" : textColor !== "white" ? "black" : undefined}
               >
                 services
               </NavLink>
             </li>
             <li>
               <NavLink to="/works"
-                className={({ isActive }) =>isActive ? "nav-link-active" : textColor !== "white" && "black"}
+                className={({ isActive }) =>isActive ? "nav-link-active" : textColor !== "white" ? "black" : undefined}
               >
                 works
               </NavLink>
             </li>
             <li>
               <NavLink to="/contacts"
-                className={({ isActive }) =>isActive ? "nav-link-active" : textColor !== "white" && "black"}
+                className={({ isActive }) =>isActive ? "nav-link-active" : textColor !== "white" ? "black" : undefined}
               >
                 contacts
               </NavLink>

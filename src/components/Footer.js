@@ -2,6 +2,7 @@ import React from 'react'
 import "./Footer.css"
 import RequestButton from './RequestButton'
 import backgroundImage from "../images/background-image-blue-clouds.jpg"
+import { Link } from 'react-router-dom'
 
 function Footer() {
     const contacts = [
@@ -63,11 +64,11 @@ function Footer() {
             </div>
 
             <div id='legal'>
-                <p className='footer-copyright-items'>
+                <Link to="/terms_conditions" className='footer-copyright-items'>
                     Terms & Conditions
-                </p>
+                </Link>
                 <p id='copyright-text'>
-                © 2019 - 2022 iShunea. All rights reserved
+                    © 2019 - 2022 iShunea. All rights reserved
                 </p>
             </div>
         </div>

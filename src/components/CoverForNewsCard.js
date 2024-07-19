@@ -1,5 +1,7 @@
 import React from 'react'
 import "./CoverForNewsCard.css"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function CoverForNewsCard({item}, size = "xl") {
   const classnameForSize = () => {
@@ -22,7 +24,7 @@ function CoverForNewsCard({item}, size = "xl") {
           {item.label}
         </p>
       </div>
-      <img className='card-cover-image' src={item.image_src}/>
+      <LazyLoadImage effect="blur" wrapperClassName='card-cover-image' src={item.image_src}/>
     </div>
   )
 }

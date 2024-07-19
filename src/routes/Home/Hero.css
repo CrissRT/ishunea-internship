@@ -18,6 +18,8 @@
     padding: 168px 80px 0px 80px;
     gap:  120px;
     background-image: url("./images/background-image-hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
