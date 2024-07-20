@@ -13,25 +13,25 @@ function Blog() {
       title : "The Impact We Have on Our Customers and Our Community",
       date : "November 27, 2022",
       label : "insight",
-      image_src : impactCustumersImage,
+      imageSrc : impactCustumersImage,
     },
     {
       title : "Don't Forget to Catch Black Friday Free Consultation",
       date : "November 24, 2022",
       label : "discount",
-      image_src : blackFridayImage,
+      imageSrc : blackFridayImage,
     },
     {
       title : "What is The Role of Computer in Information Technology?",
       date : "November 03, 2022",
       label : "insight",
-      image_src : computerRoleImage,
+      imageSrc : computerRoleImage,
     },
     {
       title : "New Partnership with Nicolae Testemițanu State University of Medicine and Pharmacy",
       date : "October 07, 2022",
       label : "partnership",
-      image_src : partnershipImage,
+      imageSrc : partnershipImage,
     },
   ]
   return (

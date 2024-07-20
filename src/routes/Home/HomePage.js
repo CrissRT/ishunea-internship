@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../../components/Footer.js';
 import Header from '../../components/Header.js';
 import Hero from './Hero.js';
-import Advantage from './Advantage.js';
+import Advantage from '../../components/Advantage.js';
 import Projects from '../../components/Projects.js';
 import CallToAction from '../../components/CallToAction.js';
 import Page from '../../components/Page.js';
@@ -21,22 +21,22 @@ function HomePage() {
     {
       text: "Mobile Applications",
       link: "",
-      image_src: mobileAppsImage,
+      imageSrc: mobileAppsImage,
     },
     {
       text: "UX/UI Design",
       link: "",
-      image_src: uxUiDesignImage,
+      imageSrc: uxUiDesignImage,
     },
     {
       text: "Graphic Design",
       link: "",
-      image_src: graphicDesignImage,
+      imageSrc: graphicDesignImage,
     },
     {
       text: "Maintenance",
       link: "",
-      image_src: maintenanceImage,
+      imageSrc: maintenanceImage,
     },
   ];
   

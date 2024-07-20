@@ -30,7 +30,7 @@ function Footer() {
                 <div id='footer-contacts-list'>
                 {contacts.map(contact => {
                     return (
-                        <div className='footer-contacts-list-items'>
+                        <div className='footer-contacts-list-items' key={contact.phone}>
                             <div>
                                 <p className='number-phone'>
                                     {contact.phone}

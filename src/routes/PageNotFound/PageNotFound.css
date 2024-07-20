@@ -9,6 +9,7 @@
   align-items: center;
 }
 
+
 #page-not-found-heading {
   display: flex;
   flex-direction: column;
@@ -41,7 +42,7 @@
   text-align: center;
   margin: 0;
 }
-#page-not-found-heading img {
+#page-not-found-heading > img {
   width: 240px;
   height: 240px;
 }

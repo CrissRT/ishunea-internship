@@ -87,10 +87,4 @@ const MenuNav = ({ textColor = "white", title = "Placeholder", itemsDroplist = [
   );
 };
 
-MenuNav.propTypes = {
-  textColor: PropTypes.string,
-  title: PropTypes.string,
-  itemsDroplist: PropTypes.arrayOf(PropTypes.string)
-};
-
 export default MenuNav;

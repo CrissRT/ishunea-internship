@@ -79,3 +79,11 @@
     line-height: 24px;
     opacity: 50%;
 }
+
+.row-wrapper-members {
+    height: 440px;
+}
+
+.row-members > :first-child,  .row-members > :last-child{
+    margin-bottom:auto;
+}

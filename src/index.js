@@ -8,7 +8,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import WorksPage from './routes/Works/WorksPage.js';
 import ServicesPage from './routes/Services/ServicesPage.js';
 import TermsAndConditions from './routes/Terms/TermsAndConditions.js';
-import PageNotFound from './components/PageNotFound.js';
+import PageNotFound from './routes/PageNotFound/PageNotFound.js';
+import ContactsPage from './routes/Contacts/ContactsPage.js';
+import AboutPage from './routes/About/AboutPage.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: "/works",
     element: <WorksPage/>
+  },
+  {
+    path: "/about",
+    element: <AboutPage/>
+  },
+  {
+    path: "/contacts",
+    element: <ContactsPage/>
   },
   {
     path: "/services",

@@ -39,7 +39,7 @@ function Header({textColor = "white"}) {
             <MenuNav textColor={textColor} title="english" itemsDroplist={["russian", "romanian", "israilean"]}/>
           </ul>
         </div>
-        <hr className={textColor !== "white" && "black"}></hr>
+        <hr className={textColor !== "white" ? "black": undefined}></hr>
       </header>
     </>
   )

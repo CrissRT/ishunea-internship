@@ -15,69 +15,69 @@ import darwin_image from "../images/darwin.png"
 import samsung_image from "../images/samsung.png"
 import agro_conex_image from "../images/agro_conex.png"
 import enter_image from "../images/enter.png"
-import Clients from '../routes/Home/Clients.js'
+import Clients from './Clients.js'
 
 function Projects({thereAreTitleAndClients = false, backgroundColor = "black", paddingTopBottom = "100px"}) {
   const row_items = [
     {
       text: "Carter",
       link: "",
-      image_src: carter_project_image,
+      imageSrc: carter_project_image,
     },
     {
       text: "Lusiton TL",
       link: "",
-      image_src: lusiton_tl_image,
+      imageSrc: lusiton_tl_image,
     },
     {
       text: "ALO.MD",
       link: "",
-      image_src: alo_md_image,
+      imageSrc: alo_md_image,
     },
     {
       text: "Tesla",
       link: "",
-      image_src: tesla_image,
+      imageSrc: tesla_image,
     },
     {
       text: "Xiaomi Store",
       link: "",
-      image_src: xiaomi_store_image,
+      imageSrc: xiaomi_store_image,
     },
     {
       text: "PV - Smart Hydroisolation",
       link: "",
-      image_src: smart_hydro_image,
+      imageSrc: smart_hydro_image,
     },
     {
       text: "Apple",
       link: "",
-      image_src: apple_image,
+      imageSrc: apple_image,
     },
     {
       text: "USMF",
       link: "",
-      image_src: usmf_image,
+      imageSrc: usmf_image,
     },
     {
       text: "Darwin",
       link: "",
-      image_src: darwin_image,
+      imageSrc: darwin_image,
     },
     {
       text: "Samsung",
       link: "",
-      image_src: samsung_image,
+      imageSrc: samsung_image,
     },
     {
       text: "Agro Conex",
       link: "",
-      image_src: agro_conex_image,
+      imageSrc: agro_conex_image,
     },
     {
       text: "Enter",
       link: "",
-      image_src: enter_image,
+      imageSrc: enter_image,
     },
   ]
   const rows = [];

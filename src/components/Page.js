@@ -2,18 +2,21 @@ import React from 'react'
 import "./Page.css"
 
 
-function Page({contentComponents, height = "auto", paddingTop = "0px", backgroundColor = "black", paddingBottom = "0px", paddingLeft = "0px", paddingRight = "0px"}) {
+function Page({contentComponents, backgroundColor = "black", paddingBottom = "0px", paddingLeft = "0px", paddingRight = "0px", paddingTop = "0px"}) {
   return (
   <main id='page-content' 
     style={
       {
         paddingTop: paddingTop, paddingBottom: paddingBottom, 
         paddingLeft: paddingLeft, paddingRight: paddingRight, 
-        backgroundColor: backgroundColor, height: height,
+        backgroundColor: backgroundColor,
       }
     }
   >
-    {contentComponents.map((component) => component)}
+    {contentComponents.map((component, index) =>
+      React.cloneElement(component, { key: index })
+    )}
+
   </main>
 )
 }

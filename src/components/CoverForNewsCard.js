@@ -24,7 +24,7 @@ function CoverForNewsCard({item}, size = "xl") {
           {item.label}
         </p>
       </div>
-      <LazyLoadImage effect="blur" wrapperClassName='card-cover-image' src={item.image_src}/>
+      <LazyLoadImage effect="blur" wrapperClassName='card-cover-image' src={item.imageSrc}/>
     </div>
   )
 }

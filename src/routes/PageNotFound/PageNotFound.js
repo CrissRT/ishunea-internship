@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from "./Header"
-import Footer from "./Footer"
-import Page from "./Page"
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
+import Page from "../../components/Page"
 import "./PageNotFound.css"
-import pageNotFoundImage from "../images/page-not-found-icon.png"
+import pageNotFoundImage from "../../images/page-not-found-icon.png"
+import SendButton from '../../components/SendButton'
 
 function PageNotFound() {
     const content = [
@@ -18,7 +19,8 @@ function PageNotFound() {
                 </div>
 
                 <div id="page-not-found-action">
-
+                    <SendButton text="send message" arrowPosition='right'/>
+                    <SendButton text="go to homepage" color='white'/>
                 </div>
             </div>
         </section>
@@ -26,7 +28,7 @@ function PageNotFound() {
   return (
     <>
         <Header textColor='black'/>
-        <Page contentComponents={content} height='862px' paddingLeft='80px' paddingRight='80px' paddingTop='88px' backgroundColor='white'/>
+        <Page contentComponents={content} paddingLeft='80px' paddingRight='80px' paddingTop='88px' backgroundColor='white'/>
         <Footer/>
     </>
   )

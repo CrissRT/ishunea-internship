@@ -20,42 +20,42 @@ function ServicesPage() {
         {
             text: "Mobile Applications",
             link: "",
-            image_src: mobileAppsImage,
+            imageSrc: mobileAppsImage,
         },
         {
             text: "UX/UI Design",
             link: "",
-            image_src: uxUiDesignImage,
+            imageSrc: uxUiDesignImage,
         },
         {
             text: "Graphic Design",
             link: "",
-            image_src: graphicDesignImage,
+            imageSrc: graphicDesignImage,
         },
         {
             text: "Maintenance",
             link: "",
-            image_src: maintenanceImage,
+            imageSrc: maintenanceImage,
         },
         {
             text: "Software Development",
             link: "",
-            image_src: softwareDevelopmentImage,
+            imageSrc: softwareDevelopmentImage,
         },
         {
             text: "SEO",
             link: "",
-            image_src: seoImage,
+            imageSrc: seoImage,
         },
         {
             text: "Video Security",
             link: "",
-            image_src: videoSecurityImage,
+            imageSrc: videoSecurityImage,
         },
         {
             text: "Enterprise Systems",
             link: "",
-            image_src: enterpriseSystemsImage,
+            imageSrc: enterpriseSystemsImage,
         },
 
     ];

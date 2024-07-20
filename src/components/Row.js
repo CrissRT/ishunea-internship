@@ -2,6 +2,7 @@ import React from 'react'
 import "./Row.css"
 import ServiceItem from './ServiceItem'
 import CoverForNewsCard from './CoverForNewsCard'
+import MemberItem from "./MemberItem"
 
 function Row({items, nameOfItem, height = "default"}) {
 
@@ -9,8 +10,8 @@ function Row({items, nameOfItem, height = "default"}) {
         return(
             <div className={`row-wrapper`}>
                 <div className={`row`}>
-                    {items.map((item) => 
-                        <div className='news-cards-wrapper'>
+                    {items.map((item, index) => 
+                        <div className='news-cards-wrapper' key={index}>
                             <CoverForNewsCard item={item} height={height}/>
                             <div className='content-news-cards'>
                                 <p className='title-content-news-cards'>
@@ -35,8 +36,8 @@ function Row({items, nameOfItem, height = "default"}) {
                 return (
                     <div className={`row-wrapper-minimized-service-item row-wrapper`}>
                         <div className={`row-service-item row`}>
-                            {items.map((item) => 
-                                <ServiceItem item={item} height="non-default"/>
+                            {items.map((item, index) => 
+                                <ServiceItem item={item} height="non-default" key={index}/>
                             )}
                         </div>
                     </div>
@@ -46,8 +47,8 @@ function Row({items, nameOfItem, height = "default"}) {
             return (
                 <div className={`row-wrapper-default-service-item row-wrapper`}>
                     <div className={`row-service-item row`}>
-                        {items.map((item) => 
-                            <ServiceItem item={item} height="default"/>
+                        {items.map((item,index) => 
+                            <ServiceItem item={item} height="default" key={index}/>
                         )}
                     </div>
                 </div>
@@ -59,26 +60,19 @@ function Row({items, nameOfItem, height = "default"}) {
             else if (heightInLowerCase === "s") return newsCardsPattern(heightInLowerCase)
             else return newsCardsPattern("xl")
 
-        // case "project":
-        //     return (
-        //         <div className={`row-wrapper`}>
-        //         <div className={`row`}>
-        //             {items.map((item) => 
-        //                 <ServiceItem item={item} height='non-default'/>
-        //             )}
-        //         </div>
-        //         </div>
-        //     )
-        // case "client":
-        //     return (
-        //         <div className={`row-wrapper`}>
-        //         <div className={`row`}>
-        //             {items.map((item) => 
-        //                 <ServiceItem item={item} height='non-default'/>
-        //             )}
-        //         </div>
-        //         </div>
-        //     )
+        case "members":
+            return (
+                <div className={`row-wrapper row-wrapper-members`}>
+                    <div className={`row row-members`}>
+                        {items.map(member => {
+                            return (
+                                <MemberItem member={member} key={member.fullName}/>
+                            )
+                        })}
+                    </div>
+                </div>
+            )
+
         default:
             break;
     }

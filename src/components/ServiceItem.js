@@ -27,7 +27,7 @@ function ServiceItem({height = "default", item}) {
     if (height !== "default") {
         return (
             <div className="service-item-minimized" >
-                <LazyLoadImage effect="blur" wrapperClassName='image-service-item' src={item.image_src}/>
+                <LazyLoadImage effect="blur" wrapperClassName='image-service-item' src={item.imageSrc}/>
                 <ItemFooter/>
             </div>
         )
@@ -36,7 +36,7 @@ function ServiceItem({height = "default", item}) {
   return (
         <div className="service-item-default" >
             <ItemFooter/>
-            <LazyLoadImage effect="blur" wrapperClassName='image-service-item' src={item.image_src}/>
+            <LazyLoadImage effect="blur" wrapperClassName='image-service-item' src={item.imageSrc}/>
         </div>
   )
 }
