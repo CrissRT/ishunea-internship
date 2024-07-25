@@ -1,0 +1,12 @@
+.team-section {
+    padding: 100px 80px 100px 80px;
+    gap: 40px;
+    width: 100%;
+}
+
+.team-title {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 67.2px;
+    text-align: center;
+}

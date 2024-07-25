@@ -4,7 +4,7 @@ import "./Advantage.css"
 import backgroundImage from "../images/background-image-blue-clouds.jpg"
 import agroImage from "../images/advantage-image-agro.png"
 
-function Advantage() {
+function Advantage({paddingBottom = null}) {
     // Reusable Icon component
     const Icon = ({ svg }) => <div className="card-icon">{svg}</div>;
 
@@ -70,7 +70,7 @@ function Advantage() {
             </svg>,
         },
         {
-            text: "Build long-term relationships",
+            text: "build long-term relationships",
             icon: <svg width="49" height="44" viewBox="0 0 49 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.46689 14.4001H47.8669M24.2669 2.0001L16.1886 10.6355C14.0441 12.9279 13.4385 16.2626 14.64 19.1627L24.2669 42.4001M25.0669 2.0001L33.1452 10.6355C35.2896 12.9279 35.8953 16.2626 34.6938 19.1627L25.0669 42.4001M45.7939 19.9914L30.9138 38.5914C27.7112 42.5947 21.6225 42.5947 18.4199 38.5914L3.53993 19.9914C0.993425 16.8083 1.24758 12.2194 4.13002 9.33697L9.52375 3.94324C11.024 2.44295 13.0589 1.6001 15.1806 1.6001H34.1532C36.2749 1.6001 38.3097 2.44295 39.81 3.94324L45.2038 9.33697C48.0862 12.2194 48.3404 16.8083 45.7939 19.9914Z" stroke="url(#paint0_linear_360_1453)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     <defs>
@@ -98,7 +98,7 @@ function Advantage() {
     const chunkedItems = chunkArray(card_items, 3);
 
     return (
-        <section className='advantage'>
+        <section className='advantage' style={paddingBottom !== null && {paddingBottom: paddingBottom}}>
             <div className='box'>
                 <img className='background-image' src={backgroundImage}></img>
                 <h2 id="advantages-title">Simple at every stage</h2>

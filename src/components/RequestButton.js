@@ -1,10 +1,10 @@
 import React from 'react'
 import "./RequestButton.css"
 
-function RequestButton({color = "default", text}) {
+function RequestButton({color = "default", text, borderColor = null}) {
     if (color !== "default")
         return(
-        <button className='request-button non-default-button-color'>
+        <button className='request-button non-default-button-color' style={borderColor && {borderColor: borderColor}}>
             {text}
             &nbsp;
             <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">

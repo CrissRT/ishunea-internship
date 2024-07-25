@@ -1,0 +1,41 @@
+import React from 'react'
+import Row from '../../components/Row'
+import "./Team.css"
+
+import nicolaeImage from "./images/nicolae.png"
+import alexandruImage from "./images/alexandru.png"
+import elenaImage from "./images/elena.png"
+import cameliaImage from "./images/camelia.png"
+
+function Team() {
+    const rowContent = [
+        {
+          fullName: "Alexandru Iaroslavschi",
+          job: "CEO & Founder",
+          imageSrc: alexandruImage,
+        },
+        {
+          fullName: "Elena Roșca",
+          job: "Co-Founder",
+          imageSrc: elenaImage,
+        },
+        {
+          fullName: "Camelia Brashovsky",
+          job: "Social Media Manager",
+          imageSrc: cameliaImage,
+        },
+        {
+          fullName: "Nicolae Erhan",
+          job: "Graphic Designer",
+          imageSrc: nicolaeImage,
+        },
+    ]
+  return (
+    <section className='d-flex flex-column justify-content-center align-items-center team-section'>
+        <h2 className='team-title'>Meet the team</h2>
+        <Row items={rowContent} nameOfItem="members"/>
+    </section>
+  )
+}
+
+export default Team

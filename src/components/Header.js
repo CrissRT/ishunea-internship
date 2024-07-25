@@ -12,7 +12,21 @@ function Header({textColor = "white"}) {
           <IconIshunea/>
         </NavLink>
         <div id='header-menu'>
-          <MenuNav textColor={textColor} title="company" itemsDroplist={["about","career", "blog"]}/>
+          <MenuNav textColor={textColor} title="company" 
+            itemsDroplist={[
+              {
+                name: "about",
+                link: "/about"
+              },
+              {
+                name: "career",
+                link: "/career"
+              },
+              {
+                name: "blog",
+                link: "/blog",
+              },
+            ]}/>
           <ul className='navigation-list'>
             <li >
               <NavLink to="/services"

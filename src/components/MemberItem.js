@@ -8,25 +8,8 @@ function MemberItem({member}) {
             switch (logoType) {
                 case "facebook":
                     return (
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_b_536_5115)">
-                            <rect x="0.00012207" width="36" height="36" rx="18" fill="white" fill-opacity="0.1"/>
-                            <rect x="0.00012207" width="36" height="36" rx="18" fill="url(#paint0_radial_536_5115)" fill-opacity="0.1"/>
-                            <rect x="0.500122" y="0.5" width="35" height="35" rx="17.5" stroke="white" stroke-opacity="0.05"/>
-                            <path d="M21.6989 10.0033L19.78 10C17.6243 10 16.2311 11.5455 16.2311 13.9376V15.7531H14.3018C14.1351 15.7531 14.0001 15.8993 14.0001 16.0795V18.71C14.0001 18.8903 14.1353 19.0363 14.3018 19.0363H16.2311V25.6738C16.2311 25.854 16.3661 26 16.5329 26H19.0501C19.2168 26 19.3518 25.8539 19.3518 25.6738V19.0363H21.6076C21.7743 19.0363 21.9093 18.8903 21.9093 18.71L21.9102 16.0795C21.9102 15.993 21.8784 15.9101 21.8219 15.8488C21.7654 15.7876 21.6884 15.7531 21.6084 15.7531H19.3518V14.2141C19.3518 13.4744 19.5148 13.0989 20.4059 13.0989L21.6986 13.0984C21.8651 13.0984 22.0001 12.9522 22.0001 12.7721V10.3296C22.0001 10.1496 21.8653 10.0037 21.6989 10.0033Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_b_536_5115" x="-19.9999" y="-20" width="76" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
-                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_536_5115"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_536_5115" result="shape"/>
-                            </filter>
-                            <radialGradient id="paint0_radial_536_5115" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.0001 36) rotate(-90) scale(36 17.9113)">
-                            <stop stop-color="#FBDF06"/>
-                            <stop offset="1" stop-color="#FBDF06" stop-opacity="0"/>
-                            </radialGradient>
-                            </defs>
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.69874 0.00332907L5.77991 0C3.62416 0 2.23102 1.54552 2.23102 3.93762V5.75313H0.301719C0.135004 5.75313 0 5.89927 0 6.07954V8.71001C0 8.89028 0.135158 9.03625 0.301719 9.03625H2.23102V15.6738C2.23102 15.854 2.36603 16 2.53274 16H5.04993C5.21665 16 5.35165 15.8539 5.35165 15.6738V9.03625H7.60746C7.77417 9.03625 7.90918 8.89028 7.90918 8.71001L7.9101 6.07954C7.9101 5.99299 7.87824 5.91009 7.82174 5.84884C7.76525 5.78758 7.68828 5.75313 7.60823 5.75313H5.35165V4.2141C5.35165 3.47438 5.51467 3.09886 6.40582 3.09886L7.69844 3.09836C7.865 3.09836 8 2.95222 8 2.77211V0.329578C8 0.149642 7.86515 0.00366197 7.69874 0.00332907Z" fill="white"/>
                         </svg>
                     )
                 
@@ -49,9 +32,9 @@ function MemberItem({member}) {
             }
         }
         return (
-            <div className='member-social-media-icon'>
+            <a className='member-social-media-icon' href='#'>
                 {socialMediaIcon(logoType)}
-            </div>
+            </a>
         )
         
     }
