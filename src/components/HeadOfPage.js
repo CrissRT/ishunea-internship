@@ -3,7 +3,8 @@ import React from 'react'
 function HeadOfPage({title, description, buttonComponents = null}) {
     const heading = {
         padding: "0px 80px 0px 80px",
-        gap: "8px"
+        gap: "8px",
+        maxWidth: "1440px",
     };
   
     const headP = {

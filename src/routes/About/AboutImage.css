@@ -4,10 +4,12 @@
     position: relative;
     background: radial-gradient(44.44% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.64) 100%),
     url('images/background-image.png');
+    overflow: hidden;
 }
 
 .about-row {
-    width: auto;
+    overflow: hidden;
+    width: calc(100% - 80px);
     height: auto;
     top: 622px;
     left: 80px;
