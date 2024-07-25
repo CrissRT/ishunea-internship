@@ -4,9 +4,9 @@ import "./ListCareers.css"
 function ListCareers({jobs}) {
   return (
         <div className='d-flex flex-column justify-content-center align-items-center about-careers-list'>
-            {jobs.map((job) => {
+            {jobs.map((job, index) => {
                 return (
-                    <div className='job-item'>
+                    <div className='job-item' key={index}>
                         <div className='job-content d-flex justify-content-start align-items-center'>
                             <div className='job-offer-title text-dark text-start'>{job.title}</div>
                             <div className='job-description text-dark text-start job-country'>{job.country}</div>
