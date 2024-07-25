@@ -98,7 +98,7 @@ function Advantage({paddingBottom = null}) {
     const chunkedItems = chunkArray(card_items, 3);
 
     return (
-        <section className='advantage' style={paddingBottom !== null && {paddingBottom: paddingBottom}}>
+        <section className='advantage' style={paddingBottom ? {paddingBottom: paddingBottom} : {}}>
             <div className='box'>
                 <img className='background-image' src={backgroundImage}></img>
                 <h2 id="advantages-title">Simple at every stage</h2>

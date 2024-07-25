@@ -22,7 +22,7 @@ import darwin_company_image from "../images/darwin_company.png"
 import umsf_company_image from "../images/usmf_company.png"
 
 
-function Clients({backgroundGradient = null}) {
+function Clients({textColor = "default"}) {
     const companies_first_row = [
         centrica_image, unlock_image, pallet_image, skydio_image,
         aesop_image, xccelerate_image, kinship_image
@@ -39,7 +39,7 @@ function Clients({backgroundGradient = null}) {
     <section className='clients'>
         <div className='content'>
             <div className='heading'>
-                <h3 style={backgroundGradient && {background: backgroundGradient}}>20+</h3>
+            <h3 id={textColor !== "default" ? "non-gradient-color-heading" : undefined}>20+</h3>
                 <p>companies already onboard</p>
             </div>
         </div>

@@ -10,7 +10,7 @@ import Careers from './Careers'
 
 function AboutPage() {
     const pageContent = [
-        <Clients backgroundGradient="rgba(138, 162, 169, 1)"/>,
+        <Clients textColor='non-default'/>,
         <Advantage paddingBottom="0px"/>,
         <Team/>,
         <AboutImage/>,

@@ -59,3 +59,8 @@
         max-width: 7vw;
     }
 }
+
+#non-gradient-color-heading {
+    color: rgba(138, 162, 169, 1) !important;
+    opacity: 30% !important;
+}
