@@ -10,7 +10,7 @@ import Careers from './Careers'
 
 function AboutPage() {
     const pageContent = [
-        <Clients textColor='non-default'/>,
+        <Clients textColor='non-default' paddingLeftRight="80px" paddingTop="40px" paddingBottom="64px"/>,
         <Advantage paddingBottom="0px"/>,
         <Team/>,
         <AboutImage/>,
