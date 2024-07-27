@@ -29,13 +29,17 @@ function HeadOfPage({title, description, buttonComponents = null}) {
         <h1 className='text-dark' style={headH}>{title}</h1>
         <p className='font-inter text-dark font-weight-400' style={headP}>{description}</p>
         {buttonComponents && 
-        buttonComponents.map((button) => {
-            return (
-                <div className='d-flex' style={headButtons}>
-                    {button}
-                </div>
-            ) 
-        })} 
+            <div className='d-flex' style={headButtons}>
+                {buttonComponents.map((button, index) => {
+                    return (
+                        <div key={index}>
+                            {button}
+                        </div>
+                    ); 
+                })}
+            </div>
+        }
+
     </section>
   )
 }

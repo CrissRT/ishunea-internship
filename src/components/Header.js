@@ -19,8 +19,8 @@ function Header({textColor = "white"}) {
                 link: "/about"
               },
               {
-                name: "career",
-                link: "/career"
+                name: "careers",
+                link: "/careers"
               },
               {
                 name: "blog",
