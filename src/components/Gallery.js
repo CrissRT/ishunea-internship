@@ -21,7 +21,7 @@ function Gallery({paddingTop = null, padddingLeft = null, padddingRight = null, 
                             height: height && index + 1 === 3 ? "704px" : "",
                         }}
                     >
-                        <LazyLoadImage visibleByDefault={true} effect='blur' src={photo.imageSrc} alt='gallery-image'/>
+                        <LazyLoadImage effect='blur' src={photo.imageSrc} alt='gallery-image'/>
                         {photo.description ? 
                         <p className='font-inter font-weight-400 text-white m-0'>
                             {photo.description}
