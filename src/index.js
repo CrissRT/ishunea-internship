@@ -11,7 +11,7 @@ import TermsAndConditions from './routes/Terms/TermsAndConditions.js';
 import PageNotFound from './routes/PageNotFound/PageNotFound.js';
 import ContactsPage from './routes/Contacts/ContactsPage.js';
 import AboutPage from './routes/About/AboutPage.js';
-import Careers from './routes/Careers/Careers.js';
+import CareersPage from './routes/Careers/CareersPage.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/careers",
-    element: <Careers/>,
+    element: <CareersPage/>,
   },
   {
     path: "/*",

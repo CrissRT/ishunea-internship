@@ -8,31 +8,31 @@ function Careers() {
         {
             title: "Middle UX/UI Designer",
             country: "Moldova · Full-time",
-            date: new Date("2024-07-21").toLocaleDateString(),
+            date: new Date("2024-07-21"),
             link: "#",
         },
         {
             title: "Senior Python Developer",
             country: "Israel · Freelance",
-            date: new Date("2024-07-21").toLocaleDateString(),
+            date: new Date("2024-07-21"),
             link: "#",
         },
         {
             title: "Business Analyst",
             country: "Romania · Contract",
-            date: new Date("2024-07-21").toLocaleDateString(),
+            date: new Date("2024-07-21"),
             link: "#",
         },
         {
             title: "Business Analyst",
             country: "Moldova · Full-time",
-            date: new Date("2024-07-21").toLocaleDateString(),
+            date: new Date("2024-07-21"),
             link: "#",
         },
         {
             title: "Marketing Manager",
             country: "Israel · Full-time",
-            date: new Date("2024-07-21").toLocaleDateString(),
+            date: new Date("2024-07-21"),
             link: "#",
         },
     ]

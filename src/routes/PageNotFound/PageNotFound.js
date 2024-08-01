@@ -3,14 +3,14 @@ import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Page from "../../components/Page"
 import "./PageNotFound.css"
-import pageNotFoundImage from "../../images/page-not-found-icon.png"
+import magnifier from "../../images/magnifier.png"
 import SendButton from '../../components/SendButton'
 
 function PageNotFound() {
     const content = [
         <section id='page-not-found-box'>
             <div id="page-not-found-heading">
-                <img src={pageNotFoundImage}/>
+                <img src={magnifier}/>
                 <div id='page-not-found-text-wrapper'>
                     <h1 id="page-not-found-title">Page not found</h1>
                     <p id="page-not-found-paragraph">

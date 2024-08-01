@@ -58,7 +58,7 @@ function Progress() {
                     {card_info.map((item, index) => {
                         return (
                             <div className='card' key={item.title} id={"card" + (index + 1) }>
-                                <LazyLoadImage effect="blur" wrapperClassName='icon-card' src={item.icon_src}/>
+                                <LazyLoadImage effect="blur" className='icon-card' src={item.icon_src}/>
                                 <div className='card-content'>
                                     <h4>
                                         {item.title}

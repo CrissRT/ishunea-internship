@@ -1,0 +1,51 @@
+#careers-image-1440px {
+    max-width: 1440px;
+}
+#careers-image {
+    height: 862px;
+    background-image: url("./images/why-join-ishunea.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#careers-image-title {
+    width: 302px;
+    top: 511px;
+    left: 80px;
+}
+
+#grid-careers-image {
+    max-width: 628px;
+    min-width: 628px;
+    /* padding: 0px 0px 80px 0px; */
+    gap: 64px;
+    top: 494px;
+    left: 732px;
+}
+
+.careers-element-wrapper {
+    width: calc(100% / 3);
+    gap: 8px;
+}
+
+.careers-element-wrapper > .text-white {
+    width: calc(100% / 1.3);
+}
+
+.careers-image-element {
+    width: 56px;
+    height: 56px;
+}
+
+@media (max-width:1360px) {
+    #careers-image-title {
+        left: 24px;
+        top: 436px;
+        width: auto;
+    }
+
+    #grid-careers-image {
+        top: 534px;
+        left: 24px;
+    }
+}

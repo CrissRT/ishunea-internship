@@ -58,7 +58,7 @@ function MemberItem({member}) {
             {Icon("linkedin")}
         </div>
 
-        <LazyLoadImage wrapperClassName='member-image' src={member.imageSrc} alt={member.fullName}/>
+        <LazyLoadImage className='member-image' src={member.imageSrc} alt={member.fullName}/>
     </div>
   )
 }

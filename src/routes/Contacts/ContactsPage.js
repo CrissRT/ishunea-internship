@@ -26,7 +26,7 @@ function Contacts() {
                         +373 (78) 158 337
                     </p>
                 </div>
-                <LazyLoadImage src={moldovaLocationPage} effect='blur' wrapperClassName="contacts-image"/>
+                <LazyLoadImage src={moldovaLocationPage} effect='blur' className="contacts-image"/>
             </div>
 
             <div className='location-item'>
@@ -42,7 +42,7 @@ function Contacts() {
                         +972 558-5556-42
                     </p>
                 </div>
-                <LazyLoadImage src={moldovaLocationPage} effect='blur' wrapperClassName="contacts-image"/>
+                <LazyLoadImage src={moldovaLocationPage} effect='blur' className="contacts-image"/>
             </div>
         </section>,
         <div className='blue-box-container'>
