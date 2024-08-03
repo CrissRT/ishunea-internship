@@ -13,7 +13,7 @@ function News({newsItems}) {
 
         <div className='d-flex width-100 justify-content-center align-items-center' id='news-career-row-wrapper'>
         {newsItems.map((element) => (
-                <div className='d-flex news-career-items' key={element.title}>
+                <div className='d-flex news-career-items justify-content-start' key={element.description}>
                     <LazyLoadImage effect='blur' src={element.imageSrc} alt='News Image' className='news-career-image'/>
                     <div className='d-flex flex-column news-career-text'>
                         <h3 className='news-career-items-title font-inter font-weight-500 text-dark m-0'>{element.title}</h3>

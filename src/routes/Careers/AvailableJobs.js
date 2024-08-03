@@ -76,9 +76,9 @@ function AvailableJobs() {
 
             <div id='jobs-switcher' className='d-flex'>
                 <span id='show-jobs' className={showsJobs ? '' : 'opacity-50'} onClick={handleClick}>Jobs</span>
-                <label class="switch">
+                <label className="switch">
                     <input type="checkbox" id='input-jobs-switch'  onChange={handleToggle} checked={!showsJobs}/>
-                    <span class="slider round"></span>
+                    <span className="slider round"></span>
                 </label>
                 <span id='show-internships' className={!showsJobs ? '' : 'opacity-50'} onClick={handleClick}>Internships</span>
             </div>
