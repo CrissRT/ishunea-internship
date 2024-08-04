@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Header.css"
+import "../styles/Header.css"
 import IconIshunea from './IconIshunea.js'
 import MenuNav from './MenuNav.js'
 import { NavLink } from 'react-router-dom'
@@ -24,7 +24,7 @@ function Header({textColor = "white"}) {
               },
               {
                 name: "blog",
-                link: "/blog",
+                link: "/blogs",
               },
             ]}/>
           <ul className='navigation-list'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Footer.css"
+import "../styles/Footer.css"
 import RequestButton from './RequestButton'
 import backgroundImage from "../images/background-image-blue-clouds.jpg"
 import { Link } from 'react-router-dom'

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./RequestButton.css"
+import "../styles/RequestButton.css"
 
 function RequestButton({color = "default", text, borderColor = null}) {
     if (color !== "default")

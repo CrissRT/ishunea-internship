@@ -26,31 +26,3 @@
     margin: auto;
     color: black;
 }
-
-#list-case-studies {
-    gap: 8px;
-    max-width: 1440px;
-}
-
-.tag-item {
-    background: linear-gradient(259.51deg, #FBDF06 -2.01%, #FEB700 100%);
-    padding: 6px 16px 6px 16px;
-    gap: 4px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tag-item p {
-    margin: 0;
-}
-
-.tag-p {
-    opacity: 40%;
-}
-
-.default-tag-item-color {
-    border: 1px solid rgba(138, 162, 169, 0.24);
-    background: white !important;
-}

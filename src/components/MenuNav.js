@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import "./MenuNav.css";
+import "../styles/MenuNav.css";
 import arrowImage from "../images/arrow.svg";
 import sunnyArrowImage from "../images/sunny-arrow.svg";
 import romanian from "../images/romanian.svg";

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./MemberItem.css"
+import "../styles/MemberItem.css"
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function MemberItem({member}) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ModalBox.css"
+import "../styles/ModalBox.css"
 
 function ModalBox({imageSrc, title, mainText, buttonComponent, width = "436px"}) {
   return (

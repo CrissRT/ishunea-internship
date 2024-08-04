@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Row.css"
+import "../styles/Row.css"
 import ServiceItem from './ServiceItem'
 import CoverForNewsCard from './CoverForNewsCard'
 import MemberItem from "./MemberItem"

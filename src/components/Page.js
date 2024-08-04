@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Page.css"
+import "../styles/Page.css"
 
 
 function Page({contentComponents, backgroundColor = "black", paddingBottom = "0px", paddingLeft = "0px", paddingRight = "0px", paddingTop = "0px"}) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Services.css"
+import "../styles/Services.css"
 import Row from './Row'
 
 function Services({rowItems, paddingTopBottom = "100px"}) { 

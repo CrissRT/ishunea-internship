@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ListCareers.css"
+import "../styles/ListCareers.css"
 
 function ListCareers({jobs}) {
 

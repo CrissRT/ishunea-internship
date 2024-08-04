@@ -1,5 +1,5 @@
 import React from 'react';
-import "./SendButton.css";
+import "../styles/SendButton.css";
 
 function SendButton({ text, arrowPosition = "right", color = "default" }) {
     return (

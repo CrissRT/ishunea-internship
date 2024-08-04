@@ -12,6 +12,7 @@ import PageNotFound from './routes/PageNotFound/PageNotFound.js';
 import ContactsPage from './routes/Contacts/ContactsPage.js';
 import AboutPage from './routes/About/AboutPage.js';
 import CareersPage from './routes/Careers/CareersPage.js';
+import BlogPage from './routes/Blog/BlogPage.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/careers",
     element: <CareersPage/>,
+  },
+  {
+    path: "/blogs",
+    element: <BlogPage/>,
   },
   {
     path: "/*",

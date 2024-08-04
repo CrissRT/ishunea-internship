@@ -1,0 +1,19 @@
+#blogs .btn {
+    border-radius: 40px;
+    border: 1px solid rgba(138, 162, 169, 0.24);
+    padding: 6px 16px 6px 16px;
+    background: white; 
+}
+
+#blogs .btn:hover,
+#blogs .btn:focus,
+#blogs .btn:active {
+    background: transparent;
+    border: 1px solid rgba(138, 162, 169, 0.24);
+}
+
+#blogs svg {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}

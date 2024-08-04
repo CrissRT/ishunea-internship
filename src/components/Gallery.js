@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Gallery.css"
+import "../styles/Gallery.css"
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 function Gallery({paddingTop = null, padddingLeft = null, padddingRight = null, paddingBottom = null, height = null, photos}) {
     const galleryStyle = {

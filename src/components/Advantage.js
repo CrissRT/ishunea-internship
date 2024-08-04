@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Advantage.css"
+import "../styles/Advantage.css"
 
 import backgroundImage from "../images/background-image-blue-clouds.jpg"
 import agroImage from "../images/advantage-image-agro.png"

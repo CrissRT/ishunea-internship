@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Clients.css"
+import "../styles/Clients.css"
 
 import centrica_image from "../images/centrica.png"
 import unlock_image from "../images/unlock.png"
