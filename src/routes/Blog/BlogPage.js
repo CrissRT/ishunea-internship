@@ -3,11 +3,62 @@ import Header from "../../components/Header"
 import Page from '../../components/Page'
 import Footer from '../../components/Footer'
 import TagsBar from '../../components/TagsBar'
+import ListBlogs from './ListBlogs'
+
+import impactCustumersImage from "../../images/impact-custumers.png"
+import blackFridayImage from "../../images/black-friday.png"
+import computerRoleImage from "../../images/role-computer.png"
+import partnershipImage from "../../images/new-partnership.png"
 
 import "./BlogPage.css"
 
 function BlogPage() {
   const [sortButton, setSortButton] = useState("from new publications to old")
+  
+  const blogs = [
+    {
+      title: "The Impact We Have on Our Customers and Our Community",
+      label: "insight",
+      imageSrc: impactCustumersImage,
+      date: "November 27, 2022",
+    },
+    {
+      title: "Don't Forget to Catch Black Friday Free Consultation",
+      label: "discount",
+      imageSrc: blackFridayImage,
+      date: "November 24, 2022",
+    },
+    {
+      title: "What is The Role of Computer in Information Technology?",
+      label: "insight",
+      imageSrc: computerRoleImage,
+      date: "November 03, 2022",
+    },
+    {
+      title: "New Partnership with Nicolae Testemițanu State University of Medicine and Pharmacy",
+      label: "partnership",
+      imageSrc: partnershipImage,
+      date: "October 07, 2022",
+    },
+    {
+      title: "What is The Role of Computer in Information Technology?",
+      label: "insight",
+      imageSrc: computerRoleImage,
+      date: "November 03, 2022",
+    },
+    {
+      title: "New Partnership with Nicolae Testemițanu State University of Medicine and Pharmacy",
+      label: "partnership",
+      imageSrc: partnershipImage,
+      date: "October 07, 2022",
+    },
+    {
+      title: "The Impact We Have on Our Customers and Our Community",
+      label: "insight",
+      imageSrc: impactCustumersImage,
+      date: "November 27, 2022",
+    },
+  ]
 
   const tags = [
     "all articles",
@@ -45,14 +96,14 @@ function BlogPage() {
 
   const pageContent = [
     heading,
-
+    <ListBlogs blogs={blogs}/>
   ]
   return (
     <>
       <Header textColor='black'/>,
       <Page contentComponents={pageContent} paddingBottom='100px' 
             paddingLeft='80px' paddingRight='80px' paddingTop='168px'
-            backgroundColor='white'/>,
+            backgroundColor='white' gap="64px"/>
       <Footer/>
     </>
   )

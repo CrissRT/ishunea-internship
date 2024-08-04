@@ -1,6 +1,8 @@
 import React from 'react'
 import "../styles/Gallery.css"
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 function Gallery({paddingTop = null, padddingLeft = null, padddingRight = null, paddingBottom = null, height = null, photos}) {
     const galleryStyle = {
         padddingLeft: padddingLeft ? padddingLeft : "",
@@ -21,7 +23,7 @@ function Gallery({paddingTop = null, padddingLeft = null, padddingRight = null, 
                             height: height && index + 1 === 3 ? "704px" : "",
                         }}
                     >
-                        <LazyLoadImage visibleByDefault={true} effect='blur' src={photo.imageSrc} alt='gallery-image'/>
+                        <LazyLoadImage effect='opacity' src={photo.imageSrc} alt='gallery-image' threshold={200}/>
                         {photo.description ? 
                         <p className='font-inter font-weight-400 text-white m-0'>
                             {photo.description}

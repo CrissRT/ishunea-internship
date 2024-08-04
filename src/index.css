@@ -65,6 +65,10 @@ radial-gradient(199.16% 100% at 50% 0%, rgba(216, 30, 91, 0.1) 0%, rgba(0, 0, 0,
   font-family: "Inter", sans-serif;
 }
 
+.gap-40 {
+  gap: 40px;
+}
+
 .font-weight-400 {
   font-weight: 400;
 }

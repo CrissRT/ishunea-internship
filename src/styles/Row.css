@@ -50,7 +50,7 @@
     margin-bottom:auto;
 } */
 
-.news-cards-wrapper {
+/* .news-cards-wrapper {
     display: flex;
     gap: 16px;
     flex-direction: column;
@@ -82,7 +82,7 @@
     font-size: 16px;
     line-height: 24px;
     opacity: 50%;
-}
+} */
 
 .row-wrapper-members {
     height: 464px;

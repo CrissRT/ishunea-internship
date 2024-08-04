@@ -2,11 +2,14 @@ import React from 'react'
 import Header from "../../components/Header"
 import Page from "../../components/Page"
 import Footer from "../../components/Footer"
-import moldovaLocationPage from "../../images/moldova-location.png"
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import ModalBox from "../../components/ModalBox"
 import SendButton from "../../components/SendButton"
+
 import "./ContactsPage.css"
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+import moldovaLocationPage from "../../images/moldova-location.png"
 
 import chatIcon from "../../images/chat.png"
 

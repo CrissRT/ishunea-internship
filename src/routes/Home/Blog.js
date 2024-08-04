@@ -2,10 +2,10 @@ import React from 'react'
 import "./Blog.css"
 import Row from '../../components/Row'
 
-import impactCustumersImage from "./images/impact-custumers.png"
-import blackFridayImage from "./images/black-friday.png"
-import computerRoleImage from "./images/role-computer.png"
-import partnershipImage from "./images/new-partnership.png"
+import impactCustumersImage from "../../images/impact-custumers.png"
+import blackFridayImage from "../../images/black-friday.png"
+import computerRoleImage from "../../images/role-computer.png"
+import partnershipImage from "../../images/new-partnership.png"
 
 function Blog() {
   const items = [

@@ -1,8 +1,8 @@
 import React from 'react'
 import "../styles/Row.css"
 import ServiceItem from './ServiceItem'
-import CoverForNewsCard from './CoverForNewsCard'
 import MemberItem from "./MemberItem"
+import NewsCards from './NewsCards'
 
 function Row({items, nameOfItem, height = "default"}) {
 
@@ -11,17 +11,7 @@ function Row({items, nameOfItem, height = "default"}) {
             <div className={`row-wrapper`}>
                 <div className={`row`}>
                     {items.map((item, index) => 
-                        <div className='news-cards-wrapper' key={index}>
-                            <CoverForNewsCard item={item} height={height}/>
-                            <div className='content-news-cards'>
-                                <p className='title-content-news-cards'>
-                                    {item.title}
-                                </p>
-                                <p className='date-news-cards'>
-                                    {item.date}
-                                </p>
-                            </div>
-                        </div>
+                        <NewsCards height={height} item={item}/>
                     )}
                 </div>
             </div>
