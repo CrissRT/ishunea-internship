@@ -3,9 +3,10 @@ import "./ListBLogs.css"
 import NewsCards from "../../components/NewsCards"
 
 function ListBlogs({blogs}) {
+    const numberOfBlocksPerPage = 4
     const blogsEachPage = [];
-    for (let i = 0; i < blogs.length; i += 4) {
-        blogsEachPage.push(blogs.slice(i, i + 4));
+    for (let i = 0; i < blogs.length; i += numberOfBlocksPerPage) {
+        blogsEachPage.push(blogs.slice(i, i + numberOfBlocksPerPage));
     }
     const [currentPage, setCurrentPage] = useState(0);
 
@@ -22,6 +23,7 @@ function ListBlogs({blogs}) {
     const column4 = []
 
     const sizes = ["s", "m", "l", "xl"]
+    const sizesLength = sizes.length
 
     let column1Size = sizes[1]
     let column2Size = sizes[3]
@@ -35,16 +37,16 @@ function ListBlogs({blogs}) {
         const blog = currentPageContent[i]
         if (i % 4 === 0) {
             column1.push(<NewsCards item={blog} key={i} height={column1Size}/>)
-            column1Size = sizes[(sizes.indexOf(column1Size) + 1) % sizes.length]
+            column1Size = sizes[(sizes.indexOf(column1Size) + 1) % sizesLength]
         } else if (i % 4 === 1) {
             column2.push(<NewsCards item={blog} key={i} height={column2Size}/>)
-            column2Size = sizes[(sizes.indexOf(column2Size) + 1) % sizes.length]
+            column2Size = sizes[(sizes.indexOf(column2Size) + 1) % sizesLength]
         } else if (i % 4 === 2) {
             column3.push(<NewsCards item={blog} key={i} height={column3Size}/>)
-            column3Size = sizes[(sizes.indexOf(column3Size) + 1) % sizes.length]
+            column3Size = sizes[(sizes.indexOf(column3Size) + 1) % sizesLength]
         } else {
             column4.push(<NewsCards item={blog} key={i} height={column4Size}/>)
-            column4Size = sizes[(sizes.indexOf(column4Size) + 1) % sizes.length]
+            column4Size = sizes[(sizes.indexOf(column4Size) + 1) % sizesLength]
         }
     }
 
